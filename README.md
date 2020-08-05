@@ -15,3 +15,8 @@ LineFollowingAndObjectGrabbing.c showcases detection and following of a complex 
 
 ![image](https://user-images.githubusercontent.com/43772313/89460837-f19d9c00-d738-11ea-9ca3-d458549eacd6.png)
 ![image](https://user-images.githubusercontent.com/43772313/89460896-1560e200-d739-11ea-8c79-369cfe8afb26.png)
+
+
+
+The first program, TurningAndDirectionCorrecting was made to move through a small 3 turn maze. Here I noticed my robot had a faulty left motor which needed constant adjustments when moving. I devised a function to autocorrect the movements based on gyroscope sensor data. If it noticed any degree of change after a quick movement, it would then correct this by increasing the corresponding motor’s speed. Each ninety degree turn also needed to have a similar correction otherwise the sonar sensor would detect the wrong walls and fail to navigate the maze. The next program LineFollowingAndObjectGrabbing both furthers and simplifies concepts I created in the first program and introduces a few more. Here we utilize additional encoders,   line-follower sensors on top of the gyroscope and sonar sensors. I also improved on the first programs course adjustments and turns using encoders for more precision as well as modifying them to be universal for any robot I used.
+ These allow the robot to detect the line shown in the pictures of the readme and avoid the ones in the start box. The robot then follows the line to the object,
